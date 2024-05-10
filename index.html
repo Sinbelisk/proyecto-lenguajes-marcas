@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.html" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="css/navBar.css" />
+    <link rel="stylesheet" href="css/lateralNavBar.css">
+    <script src="scripts/displayNavBar.js"></script>
+</head>
+
+
+<body>
     <div class="navegacion">
-      <header>
-        <div class="logo"><img src="resources/placeholder_icon.png" alt="placeholder_icon"></div>
-        <h1 class="title">No te clipees de los backroom :)</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li>
-              <a href="#">Contacto</a>
-              <ul>
-                <!-- Para mi yo del futuro: esto necesita JAVASCRIPT; al clickar el telefono se copia al
-                portapapeles -->
-                <li><a id="navegacion_telefono" href="#">Teléfono</a></li>
-                <li><a href="mailto:test@correo.com">Correo electrónico</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <header>
+            <div class="logo">
+                <img src="resources/placeholder_icon.png" alt="placeholder_icon" />
+                <h1 class="title">No te clipees de los backroom :)</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li>
+                        <a href="#">Contacto</a>
+                        <ul>
+                            <!-- Para mi yo del futuro: esto necesita JAVASCRIPT; al clickar el telefono se copia al
+                            portapapeles -->
+                            <li><a id="navegacion_telefono" href="#">Teléfono</a></li>
+                            <li><a href="mailto:test@correo.com">Correo electrónico</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
-  </body>
+
+    <div class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+
+    
+</body>
+
 </html>

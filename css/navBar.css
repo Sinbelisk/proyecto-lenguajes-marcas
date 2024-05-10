@@ -1,0 +1,70 @@
+/* Estilos generales para el cuerpo y el encabezado */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navegacion {
+    background-color: #333; /* Color de fondo de la barra de navegación */
+    color: #fff; /* Color de texto de la barra de navegación */
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Alinear elementos a los extremos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    padding: 10px 20px; /* Espacio interior */
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Tamaño de la imagen del logo */
+    margin-right: 10px; /* Espacio entre la imagen y el título */
+}
+
+.logo h1 {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Eliminar el margen predeterminado del título */
+}
+
+nav ul {
+    list-style-type: none; /* Eliminar los puntos de lista */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Mostrar elementos de navegación en línea */
+    margin-left: 20px; /* Espacio entre elementos de navegación */
+    position: relative; /* Posicionamiento relativo para los elementos desplegables */
+}
+
+/* a partir de aqui es la barra de navegacion*/
+nav ul li ul {
+    display: none; /* Ocultar submenús por defecto */
+    position: absolute;
+    top: 100%; /* Alinear submenús debajo de los elementos principales */
+    left: 0;
+    background-color: #333; /* Color de fondo del submenú */
+    padding: 10px;
+}
+
+nav ul li:hover ul {
+    display: block; /* Mostrar submenú al pasar el ratón por encima */
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 5px 0; /* Espacio entre elementos del submenú */
+}
+
+nav ul li ul li a {
+    color: #fff; /* Color del texto del submenú */
+    text-decoration: none; /* Eliminar el subrayado de los enlaces del submenú */
+}
