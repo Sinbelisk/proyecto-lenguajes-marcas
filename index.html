@@ -1,33 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.html" />
-  </head>
-  <body>
-    <div class="navegacion">
-      <header>
-        <div class="logo"><img src="resources/placeholder_icon.png" alt="placeholder_icon"></div>
-        <h1 class="title">No te clipees de los backroom :)</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Servicios</a></li>
+    <link rel="stylesheet" href="css/navAndFooter.css" />
+    <script src="js/copiarContacto.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-titulo">
+            <img src="resources/monkey-conduciendo.gif" alt="placeholder_icon" />
+        </div>
+        <div class="navegacion">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
             <li>
-              <a href="#">Contacto</a>
-              <ul>
-                <!-- Para mi yo del futuro: esto necesita JAVASCRIPT; al clickar el telefono se copia al
-                portapapeles -->
-                <li><a id="navegacion_telefono" href="#">Teléfono</a></li>
-                <li><a href="mailto:test@correo.com">Correo electrónico</a></li>
-              </ul>
+                <a href="#">Información</a>
+                <ul>
+                    <li><a href="#">Los Backrooms</a></li>
+                    <li><a href="#">Fundación SCP</a></li>
+                </ul>
             </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-  </body>
+            <li>
+                <a href="#">Articulos destacados</a>
+                <ul>
+                    <li><a href="#">Articulos SCP</a></li>
+                    <li><a href="#">Articulos Backroom</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Galeria</a></li>
+            <li>
+                <a href="#">Contacto</a>
+                <ul>
+                    <!-- Para mi yo del futuro: esto necesita JAVASCRIPT; al clickar el telefono se copia al portapapeles -->
+                    <li><a href="#" onclick="copiarAlPortapapeles('347721268')">Teléfono</a></li>
+                    <li><a href="#" onclick="copiarAlPortapapeles('test@correo.com')">Correo electrónico</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Enlaces</a>
+                <ul>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://youtube.com/">Youtube</a></li>
+                    <li><a href="https://scp-wiki.wikidot.com/">SCP Wiki</a></li>
+                    <li><a href="http://backrooms-wiki.wikidot.com/">Backrooms wiki</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<section>
+</section>
+
+<div>
+    <footer>
+        <p>NOMBRES GOES HEAR</p>
+        <date>17/05/2024</date>
+        <p>Copyright © todos los derechos reservados</p>
+    </footer>
+</div>
+</body>
+
 </html>
