@@ -59,7 +59,7 @@
     border-top: 3px solid transparent;
 }
 
-.navegacion nav ul li:hover > ul {
+.navegacion nav ul li:hover ul {
     display: block;
     border-top-color: aquamarine;
 }
