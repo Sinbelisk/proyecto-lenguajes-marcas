@@ -1,70 +1,73 @@
-/* Estilos generales para el cuerpo y el encabezado */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 .navegacion {
-    background-color: #333; /* Color de fondo de la barra de navegación */
-    color: #fff; /* Color de texto de la barra de navegación */
-}
-
-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between; /* Alinear elementos a los extremos */
-    align-items: center; /* Centrar verticalmente los elementos */
-    padding: 10px 20px; /* Espacio interior */
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
 }
 
-.logo {
-    display:flex;
+.navegacion .logo-titulo {
+    display: flex;
     align-items: center;
 }
 
-.logo img {
-    width: 50px; /* Tamaño de la imagen del logo */
-    margin-right: 10px; /* Espacio entre la imagen y el título */
+.navegacion img {
+    height: 40px;
+    margin-right: 10px;
 }
 
-.logo h1 {
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0; /* Eliminar el margen predeterminado del título */
+.navegacion .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
 }
 
-nav ul {
-    list-style-type: none; /* Eliminar los puntos de lista */
+.navegacion nav ul {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline; /* Mostrar elementos de navegación en línea */
-    margin-left: 20px; /* Espacio entre elementos de navegación */
-    position: relative; /* Posicionamiento relativo para los elementos desplegables */
+.navegacion nav ul li {
+    position: relative;
+    margin-left: 20px;
 }
 
-/* a partir de aqui es la barra de navegacion*/
-nav ul li ul {
-    display: none; /* Ocultar submenús por defecto */
-    position: absolute;
-    top: 100%; /* Alinear submenús debajo de los elementos principales */
-    left: 0;
-    background-color: #333; /* Color de fondo del submenú */
+.navegacion nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
     padding: 10px;
-}
-
-nav ul li:hover ul {
-    display: block; /* Mostrar submenú al pasar el ratón por encima */
-}
-
-nav ul li ul li {
     display: block;
-    margin: 5px 0; /* Espacio entre elementos del submenú */
 }
 
-nav ul li ul li a {
-    color: #fff; /* Color del texto del submenú */
-    text-decoration: none; /* Eliminar el subrayado de los enlaces del submenú */
+/* Submenu */
+.navegacion nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%; 
+    transform: translateX(-50%); /* Ajusta el submenú para que esté centrado */
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: auto;
+    border-top: 3px solid transparent;
 }
+
+.navegacion nav ul li:hover > ul {
+    display: block;
+    border-top-color: aquamarine;
+}
+
+/* Efectos */
+.navegacion nav ul li ul li a:hover,
+.navegacion nav ul li a:hover {
+    transition: 15ms;
+    color: aquamarine;
+}
+
