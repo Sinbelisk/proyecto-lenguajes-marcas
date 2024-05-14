@@ -1,0 +1,90 @@
+body {
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 auto;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../resources/imagenes/flat\,750x1000\,075\,f.jpg);
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main {
+    display: grid;
+    grid-gap: 20px;
+}
+
+section, #inicio, #galeria {
+    padding: 20px;
+    background-color: rgba(221, 221, 221, 0.8);
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+#multimedia {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto;
+}
+
+#titulo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#titulo img {
+    width: 90px;
+}
+
+#titulo h1 {
+    margin-left: 10px;
+}
+
+#galeria img {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+#galeria img:hover {
+    transform: scale(1.1);
+}
+
+#video video {
+    width: 600px;
+}
+
+#multimedia {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-content: center;
+}
+
+#multimedia > div {
+    background-color: rgba(221, 221, 221, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+#multimedia h2 {
+    grid-column: 1 / -1;
+}
+
+#multimedia h3 {
+    margin-top: 0;
+}
+
+#multimedia audio,
+#multimedia video,
+#multimedia img {
+    max-width: 100%;
+}

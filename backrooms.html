@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-
-    body {
-        max-width: 1000px;
-        padding: 20px;
-        margin: 0 auto;
-        align-items: center;
-    }
-
-    header {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    main {
-        display: grid;
-        grid-gap: 20px;
-    }
-
-    section {
-        padding: 20px;
-        background-color: lightgray;
-    }
-
-    footer {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    #galeria {
-        text-align: center;
-    }
-
-    #inicio {
-        text-align: center;
-    }
-
-    #multimedia {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: auto;
-    }
-
-    #galeria img {
-        width: 250px;
-        height: 250px;
-    }
-
-    #video video {
-        width: 600px;
-    }
-
-    </style>
+    <link rel="stylesheet" href="css/navAndFooter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="css/backrooms.css">
 </head>
 <body>
-  <header>
-        <h1>Backrooms</h1>
-  </header>
+    <header>
+        <div class="logo-titulo">
+            <img src="resources/monkey-conduciendo.gif" alt="placeholder_icon" />
+        </div>
+        <div class="navegacion">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Información</a>
+                <ul>
+                    <li><a href="#">Los Backrooms</a></li>
+                    <li><a href="#">Fundación SCP</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Articulos destacados</a>
+                <ul>
+                    <li><a href="#">Articulos SCP</a></li>
+                    <li><a href="#">Articulos Backroom</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Galeria</a></li>
+            <li>
+                <a href="#">Contacto</a>
+                <ul>
+                    <!-- Para mi yo del futuro: esto necesita JAVASCRIPT; al clickar el telefono se copia al portapapeles -->
+                    <li><a href="#" onclick="copiarAlPortapapeles('347721268')">Teléfono</a></li>
+                    <li><a href="#" onclick="copiarAlPortapapeles('test@correo.com')">Correo electrónico</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Enlaces</a>
+                <ul>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://youtube.com/">Youtube</a></li>
+                    <li><a href="https://scp-wiki.wikidot.com/">SCP Wiki</a></li>
+                    <li><a href="http://backrooms-wiki.wikidot.com/">Backrooms wiki</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
   
   <main>
+    <section id="titulo">
+        <img src="resources/imagenes/International MEG.png">
+        <h1>The Backrooms</h1>
+    </section>
+
     <section id="inicio">
         <p>
             Si no tienes cuidado y te sales de la realidad en las áreas equivocadas, terminarás en
@@ -141,11 +136,23 @@
             <h3>Entidad del Nivel más peligroso</h3>
             <img src="resources/imagenes/hq720 (1).jpg">
         </div>
+        <div>
+            <h3>Imagen de unas latas de Agua de Almendras</h3>
+            <img src="resources/imagenes/Nuevo_diseño_agua_de_almendras..webp">
+        </div>
+        <div>
+            <h3>La Salida...</h3>
+            <img src="resources/imagenes/9223372036854775807.webp">
+        </div>
     </section>
   </main>
   
-  <footer>
-    <p>Derechos de autor © 2024 Backrooms</p>
-  </footer>
+  <div>
+    <footer>
+        <p>NOMBRES GOES HEAR</p>
+        <date>17/05/2024</date>
+        <p>Copyright © todos los derechos reservados</p>
+    </footer>
+</div>
 </body>
 </html>
