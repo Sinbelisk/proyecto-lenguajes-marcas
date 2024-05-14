@@ -1,27 +1,31 @@
+.logo-titulo {
+    display: flex;
+    align-items: stretch;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.logo-titulo img {
+    height: 100%;
+    width: 100%;
+    /*define como se escala la imagen*/
+    object-fit:fill;
+}
+
 .navegacion {
     background-color: #333;
     color: white;
-    padding: 10px 20px;
+    padding: 0px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position:relative;
-}
-
-.navegacion .logo-titulo {
-    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.navegacion img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.navegacion .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
+.navegacion nav {
+    display: flex;
+    /* space-evenly deja un espacio igual entre los elementos */
+    justify-content:space-evenly; 
+    width: 100%;
 }
 
 .navegacion nav ul {
@@ -33,7 +37,7 @@
 
 .navegacion nav ul li {
     position: relative;
-    margin-left: 20px;
+    text-align: center;
 }
 
 .navegacion nav ul li a {
@@ -49,13 +53,13 @@
     display: none;
     position: absolute;
     top: 100%;
-    left: 50%; 
-    transform: translateX(-50%); /* Ajusta el submenú para que esté centrado */
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #444;
     list-style: none;
     padding: 0;
     margin: 0;
-    min-width: auto;
+    min-width: 150px;
     border-top: 3px solid transparent;
 }
 
@@ -65,9 +69,12 @@
 }
 
 /* Efectos */
-.navegacion nav ul li ul li a:hover,
 .navegacion nav ul li a:hover {
-    transition: 15ms;
+    transition: color 0.20s ease;
     color: aquamarine;
+    transform: scale(1.1);
 }
+
+
+
 
