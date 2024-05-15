@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="css/navAndFooter.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="js/copiarContacto.js"></script>
+    <style>
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            width: auto;
+        }
+        .form-group .radio-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-submit {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .btn-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,13 +58,12 @@
         <div class="navegacion">
             <nav>
                 <ul>
-<<<<<<< HEAD
                     <li><a href="index.html">Inicio</a></li>
                     <li>
                         <a href="#">Información</a>
                         <ul>
                             <li><a href="backrooms.html">Los Backrooms</a></li>
-                            <li><a href="#">Fundación SCP</a></li>
+                            <li><a href="SCP.html">Fundación SCP</a></li>
                         </ul>
                     </li>
                     <li>
@@ -34,7 +73,7 @@
                             <li><a href="#">Articulos Backroom</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Galeria</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
                     <li>
                         <a href="#">Contacto</a>
                         <ul>
@@ -57,16 +96,12 @@
                             </li>
                         </ul>
                     </li>
-=======
-                    <li><a href="#">Los Backrooms</a></li>
-                    <li><a href="SCP.html">Fundación SCP</a></li>
->>>>>>> SCPs
                 </ul>
             </nav>
         </div>
     </header>
 
-
+    <main>
     <section id="backrooms">
         <h2>Los Backrooms</h2>
         <p>
@@ -79,7 +114,61 @@
         </p>
     </section>
 
+    <section id="scps">
+        <h2>SCP Foundation</h2>
+        <p>
+            "Humanity in its current state has existed for a quarter of a million years, yet only a 
+            small fraction of that has been of any importance. So, what did we do for nearly 250,000 years? 
+            We huddled in caves and around small fires, fearful of the things we didn't understand. 
+            It was more than explaining why the sun came up, it was the mystery of enormous birds with 
+            the heads of men and rocks that came to life. So we called them "gods" and "demons", begged 
+            them to spare us, and prayed for salvation. In time, their numbers dwindled and ours rose. 
+            The world began to make more sense when there were fewer things to fear, yet the unexplainable 
+            can never truly go away, as if the universe demands the absurd and impossible. Humanity must 
+            not go back to hiding in fear. No one else will protect us, and we must stand up for ourselves.
+            While the rest of mankind dwells in the light, we must stand in the darkness to fight it, contain it, and 
+            shield it from the eyes of the public, so that others may live in a sane and normal world.
+            We secure. We contain. We protect.
+        </p>
+    </section>
 
+    <section>
+        <h2>Unete a la comunidad!!!</h2>
+        <div class="container">
+            <h2>Registro de Usuario</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Fecha de Nacimiento:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="fullname">Nombre y Apellidos:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-group">
+                    <label>¿Tienes experiencia?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="experience" value="yes" required> Sí
+                        </label>
+                        <label>
+                            <input type="radio" name="experience" value="no" required> No
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Registrar</button>
+            </form>
+        </div>
+    </section>
+    </main>
 
     <div>
         <footer>
