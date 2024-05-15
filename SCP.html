@@ -4,22 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
-    <style>
-           h1,h2,p{
-             color: white;   
-            }
-            div{
-                background:  black;
-                border-radius: 20px;
-                padding: 20px;
-                margin: 20px;
-            }
-    </style>
+    <link rel="stylesheet" href="css/navAndFooter.css" />
+    <script src="js/copiarContacto.js"></script>
+<link rel="stylesheet" href="SCPstyle.css">
 </head>
 <body>
-    <div>
-        <img src="https://us.v-cdn.net/6036147/uploads/I96REDZEDBSX/l-03-5-1-1200x675.jpg" alt="Logo de SCP Foundation" height="150px">
+    <header>
+        <div class="logo-titulo">
+            <img src="resources/monkey-conduciendo.gif" alt="placeholder_icon" />
+        </div>
+        <div class="navegacion">
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+                <a href="#">Información</a>
+                <ul>
+                    <li><a href="#">Los Backrooms</a></li>
+                    <li><a href="SCP.html">Fundación SCP</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Articulos destacados</a>
+                <ul>
+                    <li><a href="#">Articulos SCP</a></li>
+                    <li><a href="#">Articulos Backroom</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Galeria</a></li>
+            <li>
+                <a href="#">Contacto</a>
+                <ul>
+                    <!-- Para mi yo del futuro: esto necesita JAVASCRIPT; al clickar el telefono se copia al portapapeles -->
+                    <li><a href="#" onclick="copiarAlPortapapeles('347721268')">Teléfono</a></li>
+                    <li><a href="#" onclick="copiarAlPortapapeles('test@correo.com')">Correo electrónico</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Enlaces</a>
+                <ul>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://youtube.com/">Youtube</a></li>
+                    <li><a href="https://scp-wiki.wikidot.com/">SCP Wiki</a></li>
+                    <li><a href="http://backrooms-wiki.wikidot.com/">Backrooms wiki</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div>
+
+        <img src="https://us.v-cdn.net/6036147/uploads/I96REDZEDBSX/l-03-5-1-1200x675.jpg" alt="Logo de SCP Foundation" height="520px" width="1020px">
         <h1>¿Que es la SCP Foundation?</h1>
         <p>Operando clandestinamente y en todo el mundo, la Fundación opera más allá de la jurisdicción, facultada y confiada por todos los principales gobiernos nacionales con la tarea de contener objetos anómalos, entidades y fenómenos. Muchas de estas anomalías representan una amenaza significativa para la seguridad global al amenazar con daños físicos o psicológicos. Todos ellos socavan las leyes naturales en las que las personas del mundo confían implícitamente. </p>
         <p>La Fundación opera para mantener la normalidad, de modo que la población civil mundial pueda vivir y continuar con su vida cotidiana sin temor, desconfianza o duda en sus creencias personales, y para mantener la independencia humana de la influencia extraterrestre, extradimensional y otras influencias extranormales.</p>
@@ -43,45 +78,35 @@
        <h1>Clases de Objetos</h1> 
       <p> A todos los objetos anómalos, entidades, y fenómenos que requieren de Procedimientos Especiales de Contención se les asigna una Clase de Objeto para favorecer las prioridades de investigación o presupuestarias, entre otras consideraciones. La clase asignada a un objeto se determina generalmente por un número de factores, pero más importantemente por la combinación de las dificultades para contenerlo, así como el peligro que representa para el personal de La Fundación y la humanidad en general.</p>
        <p>La clasificación particular de una anomalía está sujeta a la actualización y modificación, así como la investigación y el conocimiento del objeto, entidad, o fenómeno. </p>
-        <h2>Clases Primarias</h2>
-        <p>Estas son las Clases de Objetos más comunes asignadas a las anomalías, y constituyen la mayor parte desde La Base de Datos de La Fundación.</p>
-        
-        <h2>Ultra Seguro</h2>
-        <p>La clase Ultra Segura es un clase donde los SCPs no son un peligro para la humanidad pero su apariencia es extraña por eso las clases ultra seguras esta en la fundación SCP.</p>
-        
-        <h2>Seguro</h2>
-        <p>Los Objetos Clase-Seguro son aquellas anomalías que son entendidas lo suficientemente bien como para contenerlas de forma confiable y permanente, o de otra manera, no activan sus efectos anómalos por sí mismos o no intencionalmente.</p>
-        <p>Clasificar una anomalía como Segura, sin embargo, no significa que su manejo o activación no represente una amenaza, y el personal ha de recordar que los Procedimientos Especiales de Contención y Protocolos de Seguridad han de ser efectuados correctamente en todo momento.</p>
-        
-        <h2>Euclid</h2>
-        <p>Los Objetos Clase-Euclid son anomalías que no son lo suficientemente entendidas o inherentemente predecibles como para que la contención fiable no sea confiable o posible, pero no suponen una amenaza tan grande como para entrar en la Clase-Keter.</p>
-        <p>En particular, toda anomalía que exhiba autonomía, la capacidad de sentir, y/o sapiencia se clasifica generalmente como una entidad Clase-Euclid, debido a la impredisibilidad inherente del objeto que pueda actuar o pensar por sí mismo.</p>
-        
-        <h2>Keter</h2>
-        <p>Los Objetos Clase-Keter son anomalías que presentan una amenaza hostil para la seguridad del personal de La Fundación y el resto de la humanidad, o bien requieren de Procedimientos de Contención extensos y complejos para ser contenidos o que no pueden ser plenamente comprendidos por la tecnología y conocimiento actual de La Fundación.</p>
-        <p>Estas anomalías generalmente se consideran como las más peligrosas en la contención de La Fundación, y todos los esfuerzos de investigación están dirigidos a buscar maneras más confiables para contener tales anomalías, o, como ultimo recurso, la neutralización o destrucción oportuna de sus efectos anómalos.</p>
-        
-        <h1>Clases Secundarias</h1>
-        
-        <h2>Neutralizado</h2>
-        <p>Las anomalías Neutralizadas son aquellas que ya no son anómalas, ya sea por que fueron intencionalmente o accidentalmente destruidas, desconectadas, o de lo contrario, ya no presentan efectos anómalos.</p>
-        <p>La documentación de las anomalías neutralizadas es archivada para la posteridad en caso de que la anomalía recupere sus propiedades anómalas o se reactive en el futuro.</p>
-        
-        <h2>Explicado</h2>
-        <p>Las anomalías Explicadas son aquellas que son completamente comprendidas hasta el punto en que sus propiedades anómalas ya no son consideradas sobrenaturales gracias a los avances científicos, o que han sido difundidas de forma pública de tal manera que la contención ya no es posible.</p>
-        
-        <h2>Clases Esotéricas</h2>
-        <p> Las siguientes Clases de Objetos caen fuera del ámbito de clasificación estándar.</p>
-        <h2>Thaumiel</h2>
-        <p>Los objetos Clase-Thaumiel son aquellas anomalías que son altamente clasificadas y extremadamente raras que son utilizadas por La Fundación para contener o contrarrestar los efectos de otras anomalías altamente peligrosas, sobre todo objetos Clase-Keter.</p>
-        <p>Incluso para saber la mera existencia de la Clase-Thaumiel se necesita de los más altos Niveles de Seguridad de La Fundación, y la ubicación, funciones, y estado actual de estas anomalías es solo sabida por pocos miembros del personal de La Fundación fuera del Consejo O5.</p>
-        
-        <h2>Apollyon</h2>
-        <p>Los objetos Clase-Apollyon son aquellas anomalías las cuales presentan un escenario apocalíptico inevitable, no hay métodos de contención para estás anomalías debido al poder y amenaza que representan.</p>
-        <p>Las anomalías Clase-Apollyon solo se pueden retrasar más no contener, se sabe que el escenario apocalíptico más cercano provocado por una anomalía Clase-Apollyon está a 30 años de presentarse en el mejor de los casos.</p>
-        
-        <h2>Maksur</h2>
-        <p>El ítem ha sido separado en varias partes anómalas que deben mantenerse separadas, Si no entendiste pues el SCP se a separado en varías secciones y estas Secciones deben permanecer separas por Orden del Consejo O5 o por que pasara algo malo si están juntas.</p>
-    </div>
+       <h2>Clases Primarias</h2>
+       <p>Estas son las Clases de Objetos más comunes asignadas a las anomalías, y constituyen la mayor parte desde La Base de Datos de La Fundación.</p>
+       <h3 class="clasificacion">Ultra Seguro</h3>
+       <p>La clase Ultra Segura es un clase donde los SCPs no son un peligro para la humanidad pero su apariencia es extraña por eso las clases ultra seguras esta en la fundación SCP.</p>
+       <h3 class="clasificacion">Seguro</h3>
+       <p>Los Objetos Clase-Seguro son aquellas anomalías que son entendidas lo suficientemente bien como para contenerlas de forma confiable y permanente, o de otra manera, no activan sus efectos anómalos por sí mismos o no intencionalmente.</p>
+       <p>Clasificar una anomalía como Segura, sin embargo, no significa que su manejo o activación no represente una amenaza, y el personal ha de recordar que los Procedimientos Especiales de Contención y Protocolos de Seguridad han de ser efectuados correctamente en todo momento.</p>
+       <h3 class="clasificacion">Euclid</h3>
+       <p>Los Objetos Clase-Euclid son anomalías que no son lo suficientemente entendidas o inherentemente predecibles como para que la contención fiable no sea confiable o posible, pero no suponen una amenaza tan grande como para entrar en la Clase-Keter.</p>
+       <p>En particular, toda anomalía que exhiba autonomía, la capacidad de sentir, y/o sapiencia se clasifica generalmente como una entidad Clase-Euclid, debido a la impredisibilidad inherente del objeto que pueda actuar o pensar por sí mismo.</p>
+       <h3 class="clasificacion">Keter</h3>
+       <p>Los Objetos Clase-Keter son anomalías que presentan una amenaza hostil para la seguridad del personal de La Fundación y el resto de la humanidad, o bien requieren de Procedimientos de Contención extensos y complejos para ser contenidos o que no pueden ser plenamente comprendidos por la tecnología y conocimiento actual de La Fundación.</p>
+       <p>Estas anomalías generalmente se consideran como las más peligrosas en la contención de La Fundación, y todos los esfuerzos de investigación están dirigidos a buscar maneras más confiables para contener tales anomalías, o, como ultimo recurso, la neutralización o destrucción oportuna de sus efectos anómalos.</p>
+       <h2>Clases Secundarias</h2>
+       <h3 class="clasificacion">Neutralizado</h3>
+       <p>Las anomalías Neutralizadas son aquellas que ya no son anómalas, ya sea por que fueron intencionalmente o accidentalmente destruidas, desconectadas, o de lo contrario, ya no presentan efectos anómalos.</p>
+       <p>La documentación de las anomalías neutralizadas es archivada para la posteridad en caso de que la anomalía recupere sus propiedades anómalas o se reactive en el futuro.</p>
+       <h3 class="clasificacion">Explicado</h3>
+       <p>Las anomalías Explicadas son aquellas que son completamente comprendidas hasta el punto en que sus propiedades anómalas ya no son consideradas sobrenaturales gracias a los avances científicos, o que han sido difundidas de forma pública de tal manera que la contención ya no es posible.</p>
+       <h3 class="clasificacion">Clases Esotéricas</h3>
+       <p> Las siguientes Clases de Objetos caen fuera del ámbito de clasificación estándar.</p>
+       <h3 class="clasificacion">Thaumiel</h3>
+       <p>Los objetos Clase-Thaumiel son aquellas anomalías que son altamente clasificadas y extremadamente raras que son utilizadas por La Fundación para contener o contrarrestar los efectos de otras anomalías altamente peligrosas, sobre todo objetos Clase-Keter.</p>
+       <p>Incluso para saber la mera existencia de la Clase-Thaumiel se necesita de los más altos Niveles de Seguridad de La Fundación, y la ubicación, funciones, y estado actual de estas anomalías es solo sabida por pocos miembros del personal de La Fundación fuera del Consejo O5.</p>
+       <h3 class="clasificacion">Apollyon</h3>
+       <p>Los objetos Clase-Apollyon son aquellas anomalías las cuales presentan un escenario apocalíptico inevitable, no hay métodos de contención para estás anomalías debido al poder y amenaza que representan.</p>
+       <p>Las anomalías Clase-Apollyon solo se pueden retrasar más no contener, se sabe que el escenario apocalíptico más cercano provocado por una anomalía Clase-Apollyon está a 30 años de presentarse en el mejor de los casos.</p>
+       <h3 class="clasificacion">Maksur</h3>
+       <p>El ítem ha sido separado en varias partes anómalas que deben mantenerse separadas, Si no entendiste pues el SCP se a separado en varías secciones y estas Secciones deben permanecer separas por Orden del Consejo O5 o por que pasara algo malo si están juntas.</p>
+</div>
 </body>
 </html>
