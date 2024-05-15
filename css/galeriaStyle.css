@@ -1,0 +1,19 @@
+body{
+    background-image: url("resources/6346.jpg");
+}
+.galeria{
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.galeria img{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+.galeria img:hover{
+    transform: scale(1.1);
+}
