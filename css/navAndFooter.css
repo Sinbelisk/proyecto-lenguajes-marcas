@@ -13,7 +13,7 @@
 }
 
 .navegacion {
-    background-color: #333;
+    background-color: #000000;
     padding: 0px 20px;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #444;
+    background-color: #000000;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -64,13 +64,13 @@
 
 .navegacion nav ul li:hover ul {
     display: block;
-    border-top-color: aquamarine;
+    border-top-color: rgb(255, 0, 0);
 }
 
 /* Efectos */
 .navegacion nav ul li a:hover {
     transition: color 0.20s ease;
-    color: aquamarine;
+    color: rgb(255, 104, 45);
     transform: scale(1.1);
 }
 
@@ -79,7 +79,7 @@ footer{
     color:white;
     font-weight: bold;
     font-size: 12px;
-    background-color: #333;
+    background-color: #000000;
     padding:10px;
     text-align: center;
 }
