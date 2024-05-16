@@ -1,3 +1,8 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 .container {
     background-color: #fff;
     padding: 20px;
@@ -34,5 +39,10 @@
     width: 100%;
 }
 .btn-submit:hover {
-    background-color: orange;
+    background-color: darkslategray;
 }
+.arte img {
+    width: 580px;
+    height: 400px;
+}
+

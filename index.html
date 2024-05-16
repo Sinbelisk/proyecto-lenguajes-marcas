@@ -5,10 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Criaturas y Espacios Liminales</title>
+    
     <link rel="stylesheet" href="css/navAndFooter.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="js/copiarContacto.js"></script>
+
 </head>
 
 <body>
@@ -25,13 +28,6 @@
                         <ul>
                             <li><a href="backrooms.html">Los Backrooms</a></li>
                             <li><a href="SCP.html">Fundación SCP</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Articulos destacados</a>
-                        <ul>
-                            <li><a href="#">Articulos SCP</a></li>
-                            <li><a href="#">Articulos Backroom</a></li>
                         </ul>
                     </li>
                     <li><a href="galeria.html">Galeria</a></li>
@@ -93,48 +89,58 @@
         </p>
     </section>
 
-    <section>
-        <h2>Unete a la comunidad!!!</h2>
-        <div class="container">
-            <h3>Registro de Usuario</h3>
-            <form id="form" action="#" method="post">
-                <div class="form-group">
-                    <label for="username">Nombre de Usuario:</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="dob">Fecha de Nacimiento:</label>
-                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-                </div>
-                <div class="form-group">
-                    <label for="fullname">Nombre y Apellidos:</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-                <div class="form-group">
-                    <label>¿Tienes experiencia?</label>
-                    <div class="radio-group">
-                        <label>
-                            <input type="radio" name="experience" value="yes" required> Sí
-                        </label>
-                        <label>
-                            <input type="radio" name="experience" value="no" required> No
-                        </label>
+    <section id="">
+        <h2>¡Únete a la comunidad!</h2>
+        <div class="flex-container">
+            <div class="container">
+                <h3>Registro de Usuario</h3>
+                <form id="form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="username">Nombre de Usuario:</label>
+                        <input type="text" id="username" name="username" required>
                     </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Fecha de Nacimiento:</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname">Nombre y Apellidos:</label>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label>¿Tienes experiencia?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="experience" value="yes" required> Sí
+                            </label>
+                            <label>
+                                <input type="radio" name="experience" value="no" required> No
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn-submit" type="submit">Registrar</button>
+                </form>
+                <script src="js/validarFormulario.js"></script>
+            </div>
+    
+            <div class="arte">
+                <h3>¡Arte Presentado!</h3>
+                <div>
+                    <img src="resources/imagenes/1692290817486-411710662.webp" alt="Arte">
                 </div>
-                <button class="btn-submit" type="submit">Registrar</button>
-            </form>
-            <script src="js/validarFormulario.js"></script>
+            </div>
         </div>
+    </section>
     </section>
     </main>
 
     <div>
         <footer>
-            <p>NOMBRES GOES HEAR</p>
+            <p>Pablo Martínez Pedrosa | Rafael Francisco Jimenez Raro | Pedro Odero Garcia</p>
             <date>17/05/2024</date>
             <p>Copyright © todos los derechos reservados</p>
         </footer>

@@ -1,5 +1,10 @@
 body {
     background-image: url("../resources/imagenes/6346.jpg");
+    max-width: 1000px;
+    padding: 40px;
+    margin: 0 auto;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .galeria {
@@ -9,7 +14,6 @@ body {
     margin: 10px;
     flex-direction: row;
     justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
 }
 
 .galeria img {
@@ -20,4 +24,10 @@ body {
 
 .galeria img:hover {
     transform: scale(1.1);
+}
+
+.galeria section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
